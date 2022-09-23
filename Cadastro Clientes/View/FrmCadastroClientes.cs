@@ -27,6 +27,18 @@ namespace Cadastro_Clientes
 
         }
 
+        /**
+         * Instruções para funcionar o banco de dados
+         * 
+         * 1) Restaurar o backup no sql
+         * 
+         * 2) Trocar o nome da instância no data sorce pela a do banco que esteja instalado na maquina que vai fazer o teste         
+         *
+         *  conexao = new SqlConnection(@"Data Source = trocar aqui; Initial Catalog = CADASTRO_CLIENTES; Persist Security Info = True; User ID = sa;Password=123456;TrustServerCertificate=True");
+         *
+         * 3) Criar conexão no visual studio, no fonte de dados, com nome correto da instância do banco instalado na maquina de teste.       * 
+         */
+
         SqlConnection conexao;
         SqlCommand comando;
         SqlDataAdapter da;
@@ -95,107 +107,107 @@ namespace Cadastro_Clientes
                     }
                     else if (cbEstado.SelectedItem.ToString() == "Acre")
                     {
-                        comando.Parameters.AddWithValue("@ESTADO", cbEstado.SelectedItem);
+                        comando.Parameters.AddWithValue("@ESTADO", cli.Estado = Convert.ToString(cbEstado.Text));
                     }
                     else if (cbEstado.SelectedItem.ToString() == "Alagoas")
                     {
-                        comando.Parameters.AddWithValue("@ESTADO", cbEstado.Text);
+                      comando.Parameters.AddWithValue("@ESTADO", cli.Estado = Convert.ToString(cbEstado.Text));
                     }
                     else if (cbEstado.SelectedItem.ToString() == "Amapá")
                     {
-                        comando.Parameters.AddWithValue("@ESTADO", cbEstado.Text);
+                        comando.Parameters.AddWithValue("@ESTADO", cli.Estado = Convert.ToString(cbEstado.Text));
                     }
                     else if (cbEstado.SelectedItem.ToString() == "Amazonas")
                     {
-                        comando.Parameters.AddWithValue("@ESTADO", cbEstado.Text);
+                        comando.Parameters.AddWithValue("@ESTADO", cli.Estado = Convert.ToString(cbEstado.Text));
                     }
                     else if (cbEstado.SelectedItem.ToString() == "Bahia")
                     {
-                        comando.Parameters.AddWithValue("@ESTADO", cbEstado.Text);
+                        comando.Parameters.AddWithValue("@ESTADO", cli.Estado = Convert.ToString(cbEstado.Text));
                     }
                     else if (cbEstado.SelectedItem.ToString() == "Ceará")
                     {
-                        comando.Parameters.AddWithValue("@ESTADO", cbEstado.Text);
+                        comando.Parameters.AddWithValue("@ESTADO", cli.Estado = Convert.ToString(cbEstado.Text));
                     }
                     else if (cbEstado.SelectedItem.ToString() == "Goiás")
                     {
-                        comando.Parameters.AddWithValue("@ESTADO", cbEstado.Text);
+                        comando.Parameters.AddWithValue("@ESTADO", cli.Estado = Convert.ToString(cbEstado.Text));
                     }
                     else if (cbEstado.SelectedItem.ToString() == "Maranhão")
                     {
-                        comando.Parameters.AddWithValue("@ESTADO", cbEstado.Text);
+                        comando.Parameters.AddWithValue("@ESTADO", cli.Estado = Convert.ToString(cbEstado.Text));
                     }
                     else if (cbEstado.SelectedItem.ToString() == "Mato Grosso")
                     {
-                        comando.Parameters.AddWithValue("@ESTADO", cbEstado.Text);
+                        comando.Parameters.AddWithValue("@ESTADO", cli.Estado = Convert.ToString(cbEstado.Text));
                     }
                     else if (cbEstado.SelectedItem.ToString() == "Mato Grosso do Sul")
                     {
-                        comando.Parameters.AddWithValue("@ESTADO", cbEstado.Text);
+                        comando.Parameters.AddWithValue("@ESTADO", cli.Estado = Convert.ToString(cbEstado.Text));
                     }
                     else if (cbEstado.SelectedItem.ToString() == "Minas Gerais")
                     {
-                        comando.Parameters.AddWithValue("@ESTADO", cbEstado.Text);
+                        comando.Parameters.AddWithValue("@ESTADO", cli.Estado = Convert.ToString(cbEstado.Text));
                     }
                     else if (cbEstado.SelectedItem.ToString() == "Pará")
                     {
-                        comando.Parameters.AddWithValue("@ESTADO", cbEstado.Text);
+                        comando.Parameters.AddWithValue("@ESTADO", cli.Estado = Convert.ToString(cbEstado.Text));
                     }
                     else if (cbEstado.SelectedItem.ToString() == "Paraíba")
                     {
-                        comando.Parameters.AddWithValue("@ESTADO", cbEstado.Text);
+                        comando.Parameters.AddWithValue("@ESTADO", cli.Estado = Convert.ToString(cbEstado.Text));
                     }
                     else if (cbEstado.SelectedItem.ToString() == "Paraná")
                     {
-                        comando.Parameters.AddWithValue("@ESTADO", cbEstado.Text);
+                        comando.Parameters.AddWithValue("@ESTADO", cli.Estado = Convert.ToString(cbEstado.Text));
                     }
                     else if (cbEstado.SelectedItem.ToString() == "Pernambuco")
                     {
-                        comando.Parameters.AddWithValue("@ESTADO", cbEstado.Text);
+                        comando.Parameters.AddWithValue("@ESTADO", cli.Estado = Convert.ToString(cbEstado.Text));
                     }
                     else if (cbEstado.SelectedItem.ToString() == "Piauí")
                     {
-                        comando.Parameters.AddWithValue("@ESTADO", cbEstado.Text);
+                        comando.Parameters.AddWithValue("@ESTADO", cli.Estado = Convert.ToString(cbEstado.Text));
                     }
                     else if (cbEstado.SelectedItem.ToString() == "Rio de Janeiro")
                     {
-                        comando.Parameters.AddWithValue("@ESTADO", cbEstado.Text);
+                        comando.Parameters.AddWithValue("@ESTADO", cli.Estado = Convert.ToString(cbEstado.Text));
                     }
                     else if (cbEstado.SelectedItem.ToString() == "Rio Grande do Norte")
                     {
-                        comando.Parameters.AddWithValue("@ESTADO", cbEstado.Text);
+                        comando.Parameters.AddWithValue("@ESTADO", cli.Estado = Convert.ToString(cbEstado.Text));
                     }
                     else if (cbEstado.SelectedItem.ToString() == "Rio Grande do Sul")
                     {
-                        comando.Parameters.AddWithValue("@ESTADO", cbEstado.Text);
+                        comando.Parameters.AddWithValue("@ESTADO", cli.Estado = Convert.ToString(cbEstado.Text));
                     }
                     else if (cbEstado.SelectedItem.ToString() == "Rondônia")
                     {
-                        comando.Parameters.AddWithValue("@ESTADO", cbEstado.Text);
+                        comando.Parameters.AddWithValue("@ESTADO", cli.Estado = Convert.ToString(cbEstado.Text));
                     }
                     else if (cbEstado.SelectedItem.ToString() == "Roraima")
                     {
-                        comando.Parameters.AddWithValue("@ESTADO", cbEstado.Text);
+                        comando.Parameters.AddWithValue("@ESTADO", cli.Estado = Convert.ToString(cbEstado.Text));
                     }
                     else if (cbEstado.SelectedItem.ToString() == "Santa Catarina")
                     {
-                        comando.Parameters.AddWithValue("@ESTADO", cbEstado.Text);
+                        comando.Parameters.AddWithValue("@ESTADO", cli.Estado = Convert.ToString(cbEstado.Text));
                     }
                     else if (cbEstado.SelectedItem.ToString() == "São Paulo")
                     {
-                        comando.Parameters.AddWithValue("@ESTADO", cbEstado.Text);
+                        comando.Parameters.AddWithValue("@ESTADO", cli.Estado = Convert.ToString(cbEstado.Text));
                     }
                     else if (cbEstado.SelectedItem.ToString() == "Sergipe")
                     {
-                        comando.Parameters.AddWithValue("@ESTADO", cbEstado.Text);
+                        comando.Parameters.AddWithValue("@ESTADO", cli.Estado = Convert.ToString(cbEstado.Text));
                     }
                     else if (cbEstado.SelectedItem.ToString() == "Tocantins")
                     {
-                        comando.Parameters.AddWithValue("@ESTADO", cbEstado.Text);
+                        comando.Parameters.AddWithValue("@ESTADO", cli.Estado = Convert.ToString(cbEstado.Text));
                     }
                     else if (cbEstado.SelectedItem.ToString() == "Distrito Federal")
                     {
-                        comando.Parameters.AddWithValue("@ESTADO", cbEstado.Text);
+                        comando.Parameters.AddWithValue("@ESTADO", cli.Estado = Convert.ToString(cbEstado.Text));
                     }
 
                     /*
